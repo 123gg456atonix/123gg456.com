@@ -134,7 +134,7 @@ export function ContactPage({ theme }: ContactPageProps) {
     setSubmitStatus("idle")
 
     try {
-      // Prepare the data payload
+      // Prepare the data payload. PUT API KEY HERE!!!
       const payload = {
         name: formData.name,
         email: formData.email,
@@ -143,7 +143,7 @@ export function ContactPage({ theme }: ContactPageProps) {
         projectType: formData.projectType,
         timestamp: new Date().toISOString(),
         userAgent: navigator.userAgent,
-        apiKey: process.env.API_KEY || "mqNWbeVRctCY0192asdFGHJ!2"
+        apiKey: process.env.API_KEY || "HERE PUT UR API KEY"
       }
 
       // Make API call to your contact endpoint

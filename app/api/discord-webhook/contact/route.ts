@@ -60,7 +60,7 @@ export async function POST(request: NextRequest) {
     const { name, email, subject, message, projectType, timestamp, userAgent, apiKey } = body
 
     // Validate API key, PUT UR API KEY HERE
-    if (!apiKey || apiKey !== "mqNWbeVRctCY0192asdFGHJ!2") {
+    if (!apiKey || apiKey !== "HERE PUT UR API KEY") {
       return NextResponse.json({ error: "Invalid or missing API key" }, { status: 401 })
     }
 
