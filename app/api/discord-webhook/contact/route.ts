@@ -15,7 +15,7 @@
 
 import { type NextRequest, NextResponse } from "next/server"
 
-const DISCORD_WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL
+const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1391836093694869590/PA4efb547rV-BPSek0ZYBSdzP_Af9Z-wuH0uD5cy_VVdaoaSxhbHtR8ad1d1pflaI1ob"
 
 // In-memory storage for rate limiting (use Redis in production). Contact me for Redis setup @123gg456_
 const rateLimitStore = new Map<string, number>()
